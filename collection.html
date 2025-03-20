@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+   
+    .container{
+      display: grid;
+      grid-template-columns: auto auto;
+      align-items: center;
+      justify-content: center;
+      column-gap: 20px;
+      row-gap: 20px;
+      width: 600px;
+      margin-left: 350px;
+      font-family: roboto arial serif;
+      animation-name: shopnow;
+      animation-duration:4s ;
+      animation-iteration-count:initial;
+      animation-direction:normal ;
+      transition: 5s;
+      
+
+    }
+
+    @keyframes shopnow{
+      from{width: 0%; transition: 5s;}
+      to{width: 48.5%; transition: 5s;}
+      
+    }
+
+    .container img{
+      transform-origin: center;
+      transform: perspective(800px) rotateY(20deg);
+      transition: 0.5s;
+      -webkit-box-reflect: below 1px linear-gradient(transparent ,transparent ,#0004);
+      column-gap: 20px;
+      
+    }
+
+    .container div{
+      border: 1px solid goldenrod;
+      padding: 10px 15px;
+      border-radius: 5px;
+      margin-top: 20px;
+      
+    }
+
+    .container:hover img
+    {
+      opacity: 0.1;
+    }
+
+    .container img:hover{
+      transform: perspective(800px) rotateY(0deg);
+      opacity: 1;
+    }
+
+    
+
+    .img1{
+      width: 200px;
+      border-radius: 5px;
+      box-shadow: 2px 2px;
+    }
+    .img2{
+      width: 210px;
+      height: 280px;
+      border-radius: 5px;
+      box-shadow: 2px 2px;
+    }
+    .img3{
+      width: 210px;
+      height: 280px;
+      border-radius: 5px;
+      box-shadow: 2px 2px;
+    }
+    .img4{
+      width: 250px;
+      height: 280px;
+      border-radius: 5px;
+      box-shadow: 2px 2px;
+    }
+
+    .log{
+      background-color: black;
+      margin-left: 200px;
+      margin-right: 200px;
+      border-radius: 5px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 20px;
+      font-size: 15px;
+      font-family: roboto arial serif;
+      color: white;
+      margin-bottom: 20px;
+     
+    }
+    a{
+      text-decoration: none;
+    }
+   .apple{
+    width: 20px;
+    margin-left: 10px;
+   }
+
+  </style>
+</head>
+<body>
+  <div class="log">
+    <div><img class="apple" src="pictures/20250217_123125.jpg"></div>
+    <div><a href="e-coms.html">SHOP NOW</a></div>
+
+  </div>
+  <div class="container">
+    <div><img class="img1" src="pictures/phones.jpeg"><p>Apple Phones</p></div>
+    <div><img class="img2" src="pictures/ipod.jpeg"><p>Apple iPod</p></div>
+    <div><img class="img3" src="pictures/imac.jpeg"><p>Apple iMac</p></div>
+    <div><img class="img4" src="pictures/macbook.jpeg"><p>Apple MacBook</p></div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products</title>
+  <style>
+    body{
+      text-align: center;
+      
+    }
+    .apple-logs{
+  display: flex;
+  align-items: center;
+  background-color: black;
+  margin-left: 150px;
+  margin-right: 150px;
+  color: white;
+  column-gap: 20px;
+  border-radius:5px;
+}
+
+ .cart{
+  margin-left: 600px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 10px;
+  
+ 
+ }
+
+ #count{
+  color: rgb(249, 8, 8);
+ }
+
+ .cartimg{
+  width:20px;
+  
+ }
+    .apple-log1{
+      width: 20px;
+    } 
+
+
+  .container{
+    display: flex;
+    width: 70%;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+
+  #root{
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap:20px;
+  }
+
+  .sidebar{
+    width: 40%;
+    border-radius: 5px;
+    background-color: white;
+    margin-left: 100px;
+    padding: 15px;
+    text-align: center;
+  }
+
+  .head{
+    background-color: goldenrod;
+    border-radius: 3px;
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 20px;
+    color: white;
+    display: flex;
+    text-align: center;
+  }
+
+  .foot{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+    padding: 10px 0px;
+    border-top: 1px solid #333;
+    }
+
+    .box{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      border: 1px solid goldenrod;
+      border-radius: 5px;
+      padding: 15px;
+    }
+
+    .img-box{
+      width: 100%;
+      height: 180px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .images{
+      max-width: 90%;
+      max-height: 90%;
+      object-fit: cover;
+      object-position: center;
+
+    }
+
+    .button{
+      margin-top: 20px;
+      width: 100%;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      height: 110px;
+    }
+    h2{
+     font-size: 20px;
+     color: red;
+
+    }
+
+    button{
+      width: 100%;
+      position: relative;
+      border-radius: 5px;
+      border: none;
+      background-color: goldenrod;
+      padding: 7px 25px;
+      cursor: pointer;
+      color: white;
+
+    }
+
+    button:hover{
+      background-color: #333;
+    }
+
+    .cart-item{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      background-color: white;
+      border-bottom: 1px solid #aaa;
+      border-radius: 3px;
+      margin: 10px 10px;
+
+    }
+
+    .row-img{
+      width: 50px;
+      height: 50px;
+      border: 1px solid goldenrod;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .rowimg{
+      max-width: 43px;
+      max-height: 43px;
+      border-radius: 50%;
+    }
+
+    .fa-trash:hover{
+      cursor: pointer;
+      color: #333;
+    }
+
+    a{
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="apple-logs">
+    <div><img class="apple-log1" src="pictures/20250217_123125.jpg"></div>
+    <div><a href="e-coms.html">APPLE PRODUCTS</a></div>
+    <div class="cart"><img class="cartimg" src="pictures/images.png"><p id="count">0</p></div>
+  </div>
+
+  <div class="container" >
+    <div id="root"></div>
+    <div class="sidebar">
+    <div class="head"><p>My Cart</p></div>
+    <div id="Cartiteam">Your cart is empty </div>
+    <div class="foot">
+      <h3>Total</h3>
+      <h2 id="total">$ 0.00</h2>
+    </div>
+  </div>
+
+
+<script src="e-coms.js"></script>
+  
+</body>
+</html>

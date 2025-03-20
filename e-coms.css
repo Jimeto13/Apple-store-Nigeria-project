@@ -1,0 +1,88 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+}
+
+body{
+  background-image:linear-gradient(90deg, rgba(0, 0, 0, 0.708),rgba(0, 0, 0, 0.333)), url('pictures/images\ \(26\).jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-clip: content-box;
+  background-attachment: fixed;
+  font-family: roboto arial sans-serif;
+  /* position: relative; */
+
+}
+
+.container{
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  height: 30px;
+  column-gap: 100px;
+
+  
+}
+
+.container div{
+  font-family: roboto arial sans-serif;
+}
+
+.apple-log{
+  width: 20px;
+ 
+}
+
+.first-P{
+  text-align: center;
+  background-color: white;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: roboto arial sans-serif;
+  font-size: 12px;
+}
+
+.first-span{
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.ASN{
+  text-align: center;
+  margin-top: 150px;
+  font-size:4em ;
+  font-family: roboto arial sans-serif;
+}
+
+.second-P{
+  text-align: center;
+  font-family:sans-serif;
+  font-size: 2.5em;
+}
+
+.thrid-P{
+  text-align: center;
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.last-P{
+  position:absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background-color: black;
+  height: 20px;
+}
